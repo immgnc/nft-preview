@@ -1,0 +1,151 @@
+:root {
+    --main: hsl(217, 54%, 11%);
+    --card: hsl(216, 50%, 16%);
+    --white: hsl(0, 0%, 100%);
+    --line: hsl(215, 32%, 27%);
+    --soft: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--line);
+}
+
+li:first-child {
+    color: var(--cyan);
+}
+
+li:last-child {
+    color: hsl(0, 0%, 100%, 50%);
+}
+
+
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    background-color: var(--main);
+    color: var(--white);
+    padding: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    flex-direction: column;
+}
+
+
+.container {
+    background-color: var(--card);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 330px;
+}
+
+.firstText {
+    margin: 1rem 0.5rem 0.5rem 0;
+    font-weight: 500;
+}
+
+.firstText:hover{
+    color:var(--cyan);
+    cursor: pointer;
+}
+
+
+
+.mainImg {
+    width: 100%;
+    border-radius: 1rem;
+    align-items: center
+}
+.firstArticle{
+    position: relative;
+}
+.hoverAvatar {
+    position: absolute;
+    top:0;
+    background-color :hsl(178, 100%, 50%, 60%);
+    width :100%;
+    height : 98.5%;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+    border-radius: 1rem;
+ 
+}
+
+.hoverAvatar img{
+    position: absolute;
+    top : 50%;
+    left :50%;
+    transform: translate(-50%, -50%)
+}
+.hoverAvatar:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.mainImg:hover{
+    background-color:var(--cyan);
+    cursor: pointer;
+}
+
+.secondText {
+    color: hsl(0, 0%, 100%, 50%);
+    margin-top: 1rem;
+    font-weight: 400;
+    
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 1.5rem;
+    color: hsl(0, 0%, 100%, 50%);
+}
+
+.secondImg {
+    width: 3rem;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+span {
+    color: var(--white);
+    font-weight: 400;
+}
+
+span:hover{
+    color:var(--cyan);
+    cursor: pointer;
+}
+
+.attribution {
+    margin-top: 140px;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.mainImg::hover {
+    background-color : var(--cyan)
+}
